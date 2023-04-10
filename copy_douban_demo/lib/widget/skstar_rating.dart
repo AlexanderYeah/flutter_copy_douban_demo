@@ -104,7 +104,6 @@ class _SKStartRatingState extends State<SKStartRating> {
     if (stars.length > widget.count) {
       return stars.sublist(0, widget.count);
     }
-
     return stars;
   }
 }
