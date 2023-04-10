@@ -100,6 +100,11 @@ class _SKStartRatingState extends State<SKStartRating> {
       ));
     }
 
+    // 这个地方做一个判断以免 传入的分数 大于总分数
+    if (stars.length > widget.count) {
+      return stars.sublist(0, widget.count);
+    }
+
     return stars;
   }
 }
