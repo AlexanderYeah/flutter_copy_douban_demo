@@ -1,3 +1,4 @@
+import 'package:copy_douban_demo/pages/tab/tab.dart';
 import 'package:copy_douban_demo/widget/skdashed_line.dart';
 import 'package:copy_douban_demo/widget/skstar_rating.dart';
 import 'package:flutter/material.dart';
@@ -15,8 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+          primarySwatch: Colors.green,
+          // 去除点击水波纹的效果
+          highlightColor: Colors.transparent),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -34,15 +36,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title),
-        ),
-        body: Center(
-          child: Container(
-            width: 200,
-            child: SKDashedLine(),
-          ),
-        ));
+    return TabPage();
   }
 }
