@@ -15,7 +15,7 @@ class SKStartRating extends StatefulWidget {
       {super.key,
       this.maxRating = 10,
       this.count = 5,
-      this.size = 30,
+      this.size = 25,
       this.unselectedColor = Colors.grey,
       this.selectedColor = Colors.redAccent,
       this.unselectedImage = null,

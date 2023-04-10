@@ -19,9 +19,9 @@ class _TabPageState extends State<TabPage> {
         children: [
           HomePage(),
           SubjectPage(),
-          HomePage(),
-          HomePage(),
-          HomePage()
+          SubjectPage(),
+          SubjectPage(),
+          SubjectPage()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
